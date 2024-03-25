@@ -4,7 +4,7 @@ using UnityEngine;
 
 interface IInteractable
 {
-    public void Interact();
+   public void Interact();
 }
 
 public class Interaction : MonoBehaviour

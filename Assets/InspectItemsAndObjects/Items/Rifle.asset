@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 1a3a789e4f010c344917f2078902ebf1, type: 3}
   prefab: {fileID: 4208290137528722931, guid: 3c20fe789caf33a4ca5217fa6434519b, type: 3}
+  lore: A rifle
+  itemName: Rifle

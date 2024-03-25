@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: e81ec6f54cec47c4ea48b0f0260ef927, type: 3}
   prefab: {fileID: 3614321750435606965, guid: e49bf6f887de5b740a63a228957d5a17, type: 3}
+  lore: Looks like it goes somewhere
+  itemName: Key

@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 38bc0b4757e27094b940167565e82be9, type: 3}
   prefab: {fileID: 2834662699148975980, guid: 931b2ca763357dc41826bdd729dde03e, type: 3}
+  lore: A submachine gun
+  itemName: SMG
