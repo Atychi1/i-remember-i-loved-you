@@ -66,7 +66,7 @@ public class InspectScript : MonoBehaviour
         InspectedObj.transform.position = Vector3.Lerp(InspectedObj.transform.position, originalPos, dropSpeed);
       }
 
-      if(Input.GetKeyDown(KeyCode.Mouse1) && Inspecting)
+      if(Input.GetKeyDown(KeyCode.Escape) && Inspecting)
       {
         Inspecting = false;
         StartCoroutine(droppItem());
