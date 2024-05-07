@@ -13,7 +13,7 @@ public class DummyInventory : MonoBehaviour
     [SerializeField] private TextMeshProUGUI itemNameText; 
     [SerializeField] private TextMeshProUGUI loreText;     
 
-    [SerializeField] private List<ItemSO> itemList;
+    [SerializeField] public List<ItemSO> itemList;
 
     private Transform itemTemplate;
     private Dictionary<ItemSO, Transform> itemSOTransformDic;
