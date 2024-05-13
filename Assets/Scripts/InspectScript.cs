@@ -65,7 +65,7 @@ public class InspectScript : MonoBehaviour
 
                     if (uidesc != null)
                     {
-                        uidesctransform.anchoredPosition = new Vector2(626, 0);
+                        uidesctransform.anchoredPosition = new Vector2(500, 0);
 
                         
                     }
@@ -104,11 +104,11 @@ public class InspectScript : MonoBehaviour
             InspectedObj.transform.position = Vector3.Lerp(InspectedObj.transform.position, originalPos, dropSpeed);
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape) && Inspecting)
+        if (Input.GetKeyDown(KeyCode.R) && Inspecting)
         {
             Inspecting = false;
             StartCoroutine(droppItem());
-            uidesctransform.anchoredPosition = new Vector2(1212, 0);
+            uidesctransform.anchoredPosition = new Vector2(3000, 0);
 
         }
     }
