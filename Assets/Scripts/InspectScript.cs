@@ -23,6 +23,13 @@ public class InspectScript : MonoBehaviour
     private bool Inspecting = false;
     private GameObject InspectedObj;
 
+    public Vector3 targetPosition; // Target position where you want to move the UI parent
+    public float moveSpeed = 5f; // Speed at which the UI parent moves
+
+    private GameObject uidesc;
+
+    private RectTransform uidesctransform;
+
     void Start()
     {
         // Disable the inspect text initially
@@ -41,6 +48,7 @@ public class InspectScript : MonoBehaviour
             {
                 // Enable the inspect text when the ray hits the object
                 inspectText.gameObject.SetActive(true);
+                
 
                 if (Input.GetKeyDown(KeyCode.E))
                 {
@@ -49,7 +57,29 @@ public class InspectScript : MonoBehaviour
                     Inspecting = true;
                     StartCoroutine(pickupItem());
                     inspectText.gameObject.SetActive(false);
+
+                    
+
+                    uidesc = GameObject.Find(InspectedObj.name + "UI");
+                    uidesctransform = uidesc.GetComponent<RectTransform>();
+
+                    if (uidesc != null)
+                    {
+                        uidesctransform.anchoredPosition = new Vector2(626, 0);
+
+                        
+                    }
+                    else
+                    {
+                        // Log a message if the GameObject was not found
+                        Debug.Log("No GameObject with the name " + InspectedObj.name + "UI was found.");
+                    }
+
+                    
+
                 }
+
+               
             }
             else
             {
@@ -78,6 +108,8 @@ public class InspectScript : MonoBehaviour
         {
             Inspecting = false;
             StartCoroutine(droppItem());
+            uidesctransform.anchoredPosition = new Vector2(1212, 0);
+
         }
     }
 
