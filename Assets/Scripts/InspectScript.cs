@@ -17,7 +17,8 @@ public class InspectScript : MonoBehaviour
     [Header("Change 'PlayerController' in the code with your own FPS controller script")]
     [SerializeField] private FirstPersonController PlayerControllerScript; // my FPS controller change it with yours
 
-    [SerializeField] private TextMeshProUGUI inspectText; // Use TextMeshProUGUI instead of Text
+    [SerializeField] private TextMeshProUGUI inspectText;
+    [SerializeField] private TextMeshProUGUI putdownText;
 
     private Vector3 originalPos;
     private bool Inspecting = false;
@@ -30,10 +31,13 @@ public class InspectScript : MonoBehaviour
 
     private RectTransform uidesctransform;
 
+    
+
     void Start()
     {
         // Disable the inspect text initially
         inspectText.gameObject.SetActive(false);
+        putdownText.gameObject.SetActive(false);
     }
 
     void Update()
@@ -57,8 +61,9 @@ public class InspectScript : MonoBehaviour
                     Inspecting = true;
                     StartCoroutine(pickupItem());
                     inspectText.gameObject.SetActive(false);
+                    putdownText.gameObject.SetActive(true);
 
-                    
+
 
                     uidesc = GameObject.Find(InspectedObj.name + "UI");
                     uidesctransform = uidesc.GetComponent<RectTransform>();
@@ -85,6 +90,7 @@ public class InspectScript : MonoBehaviour
             {
                 // Disable the inspect text when the ray doesn't hit any object or when inspecting
                 inspectText.gameObject.SetActive(false);
+
             }
         }
 
@@ -109,6 +115,7 @@ public class InspectScript : MonoBehaviour
             Inspecting = false;
             StartCoroutine(droppItem());
             uidesctransform.anchoredPosition = new Vector2(3000, 0);
+            putdownText.gameObject.SetActive(false);
 
         }
     }
