@@ -2,24 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 <<<<<<< HEAD
-<<<<<<< HEAD
 
 public class InspectScript : MonoBehaviour
 {
     [SerializeField] private float distance; //Raycast max distance
     [SerializeField] private Transform InspectArea; //A gameobject child of the camera where the object will be moved and rotated
 =======
-=======
->>>>>>> 8665f6f1fbc5a67542c1cc8a4b5b1f642f418566
 using TMPro;
 
 public class InspectScript : MonoBehaviour
 {
     [SerializeField] private float distance; // Raycast max distance
     [SerializeField] private Transform InspectArea; // A gameobject child of the camera where the object will be moved and rotated
-<<<<<<< HEAD
->>>>>>> 8665f6f1fbc5a67542c1cc8a4b5b1f642f418566
-=======
 >>>>>>> 8665f6f1fbc5a67542c1cc8a4b5b1f642f418566
     [SerializeField] private float rotationSpeed = 125f;
     [SerializeField] private float dropSpeed = 0.2f;
@@ -30,27 +24,20 @@ public class InspectScript : MonoBehaviour
     [SerializeField] private Transform RayOrigin;
     [Header("Change 'PlayerController' in the code with your own FPS controller script")]
 <<<<<<< HEAD
-<<<<<<< HEAD
     [SerializeField] private FirstPersonController PlayerControllerScript; //my fps controller change it with yours
 
 
 =======
-=======
->>>>>>> 8665f6f1fbc5a67542c1cc8a4b5b1f642f418566
     [SerializeField] private FirstPersonController PlayerControllerScript; // my FPS controller change it with yours
 
     [SerializeField] private TextMeshProUGUI inspectText;
     [SerializeField] private TextMeshProUGUI putdownText;
-<<<<<<< HEAD
->>>>>>> 8665f6f1fbc5a67542c1cc8a4b5b1f642f418566
-=======
 >>>>>>> 8665f6f1fbc5a67542c1cc8a4b5b1f642f418566
 
     private Vector3 originalPos;
     private bool Inspecting = false;
     private GameObject InspectedObj;
 
-<<<<<<< HEAD
 <<<<<<< HEAD
 
 
@@ -60,8 +47,6 @@ public class InspectScript : MonoBehaviour
       if(Input.GetKeyDown(KeyCode.E))
       {
 =======
-=======
->>>>>>> 8665f6f1fbc5a67542c1cc8a4b5b1f642f418566
     public Vector3 targetPosition; // Target position where you want to move the UI parent
     public float moveSpeed = 5f; // Speed at which the UI parent moves
 
@@ -80,15 +65,11 @@ public class InspectScript : MonoBehaviour
 
     void Update()
     {
-<<<<<<< HEAD
->>>>>>> 8665f6f1fbc5a67542c1cc8a4b5b1f642f418566
-=======
 >>>>>>> 8665f6f1fbc5a67542c1cc8a4b5b1f642f418566
         Vector3 fwdV = RayOrigin.TransformDirection(Vector3.forward);
         Debug.DrawRay(RayOrigin.position, fwdV * distance, Color.red);
 
         RaycastHit hit;
-<<<<<<< HEAD
 <<<<<<< HEAD
         if(Physics.Raycast(RayOrigin.position, fwdV, out hit, distance))
         {
@@ -132,8 +113,6 @@ public class InspectScript : MonoBehaviour
 
 
 =======
-=======
->>>>>>> 8665f6f1fbc5a67542c1cc8a4b5b1f642f418566
         if (Physics.Raycast(RayOrigin.position, fwdV, out hit, distance))
         {
             if (hit.transform.CompareTag(TargetTag) && !Inspecting)
@@ -206,15 +185,11 @@ public class InspectScript : MonoBehaviour
             putdownText.gameObject.SetActive(false);
 
         }
-<<<<<<< HEAD
->>>>>>> 8665f6f1fbc5a67542c1cc8a4b5b1f642f418566
-=======
 >>>>>>> 8665f6f1fbc5a67542c1cc8a4b5b1f642f418566
     }
 
     IEnumerator pickupItem()
     {
-<<<<<<< HEAD
 <<<<<<< HEAD
         
       //collider and rigidbodies cause problem during the inspection so we disable them during it  
@@ -231,8 +206,6 @@ public class InspectScript : MonoBehaviour
       yield return new WaitForSeconds(0.2f);
       InspectedObj.transform.SetParent(InspectArea);
 =======
-=======
->>>>>>> 8665f6f1fbc5a67542c1cc8a4b5b1f642f418566
         // Collider and rigidbodies cause problems during the inspection so we disable them during it  
         if (InspectedObj.GetComponent<Collider>())
         {
@@ -246,15 +219,11 @@ public class InspectScript : MonoBehaviour
         PlayerControllerScript.enabled = false;
         yield return new WaitForSeconds(0.2f);
         InspectedObj.transform.SetParent(InspectArea);
-<<<<<<< HEAD
->>>>>>> 8665f6f1fbc5a67542c1cc8a4b5b1f642f418566
-=======
 >>>>>>> 8665f6f1fbc5a67542c1cc8a4b5b1f642f418566
     }
 
     IEnumerator droppItem()
     {
-<<<<<<< HEAD
 <<<<<<< HEAD
       InspectedObj.transform.rotation = Quaternion.identity;
       yield return new WaitForSeconds(0.2f);
@@ -274,8 +243,6 @@ public class InspectScript : MonoBehaviour
 
 }
 =======
-=======
->>>>>>> 8665f6f1fbc5a67542c1cc8a4b5b1f642f418566
         InspectedObj.transform.rotation = Quaternion.identity;
         yield return new WaitForSeconds(0.2f);
         PlayerControllerScript.enabled = true;
@@ -291,9 +258,5 @@ public class InspectScript : MonoBehaviour
             InspectedObj.GetComponent<Rigidbody>().useGravity = true;
         }
     }
-<<<<<<< HEAD
-}
->>>>>>> 8665f6f1fbc5a67542c1cc8a4b5b1f642f418566
-=======
 }
 >>>>>>> 8665f6f1fbc5a67542c1cc8a4b5b1f642f418566

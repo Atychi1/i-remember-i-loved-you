@@ -183,11 +183,7 @@ Material:
     - _EmissiveColorMode: 1
     - _EmissiveExposureWeight: 1
 <<<<<<< HEAD
-<<<<<<< HEAD
     - _EmissiveIntensity: 1000
-=======
-    - _EmissiveIntensity: 50
->>>>>>> 8665f6f1fbc5a67542c1cc8a4b5b1f642f418566
 =======
     - _EmissiveIntensity: 50
 >>>>>>> 8665f6f1fbc5a67542c1cc8a4b5b1f642f418566
@@ -284,11 +280,7 @@ Material:
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
 <<<<<<< HEAD
-<<<<<<< HEAD
     - _EmissiveColor: {r: 749.0196, g: 749.0196, b: 749.0196, a: 1000}
-=======
-    - _EmissiveColor: {r: 37.450977, g: 37.450977, b: 37.450977, a: 50}
->>>>>>> 8665f6f1fbc5a67542c1cc8a4b5b1f642f418566
 =======
     - _EmissiveColor: {r: 37.450977, g: 37.450977, b: 37.450977, a: 50}
 >>>>>>> 8665f6f1fbc5a67542c1cc8a4b5b1f642f418566

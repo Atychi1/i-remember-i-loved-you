@@ -31,12 +31,7 @@ Material:
   - _DISABLE_SSR_TRANSPARENT
   - _NORMALMAP_TANGENT_SPACE
 <<<<<<< HEAD
-<<<<<<< HEAD
   m_InvalidKeywords: []
-=======
-  m_InvalidKeywords:
-  - _EMISSION
->>>>>>> 8665f6f1fbc5a67542c1cc8a4b5b1f642f418566
 =======
   m_InvalidKeywords:
   - _EMISSION
@@ -192,11 +187,7 @@ Material:
     - _EmissiveColorMode: 1
     - _EmissiveExposureWeight: 1
 <<<<<<< HEAD
-<<<<<<< HEAD
     - _EmissiveIntensity: 5000
-=======
-    - _EmissiveIntensity: 0
->>>>>>> 8665f6f1fbc5a67542c1cc8a4b5b1f642f418566
 =======
     - _EmissiveIntensity: 0
 >>>>>>> 8665f6f1fbc5a67542c1cc8a4b5b1f642f418566
@@ -293,11 +284,7 @@ Material:
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
 <<<<<<< HEAD
-<<<<<<< HEAD
     - _EmissiveColor: {r: 3745.098, g: 3745.098, b: 3745.098, a: 5000}
-=======
-    - _EmissiveColor: {r: 0, g: 0, b: 0, a: 0}
->>>>>>> 8665f6f1fbc5a67542c1cc8a4b5b1f642f418566
 =======
     - _EmissiveColor: {r: 0, g: 0, b: 0, a: 0}
 >>>>>>> 8665f6f1fbc5a67542c1cc8a4b5b1f642f418566
