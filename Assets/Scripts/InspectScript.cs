@@ -21,6 +21,7 @@ public class InspectScript : MonoBehaviour
     [SerializeField] private TextMeshProUGUI putdownText;
 
     private Vector3 originalPos;
+    private Quaternion originalRot; // Add this line to save the original rotation
     private bool Inspecting = false;
     private GameObject InspectedObj;
 
@@ -30,8 +31,6 @@ public class InspectScript : MonoBehaviour
     private GameObject uidesc;
 
     private RectTransform uidesctransform;
-
-    
 
     void Start()
     {
@@ -52,18 +51,16 @@ public class InspectScript : MonoBehaviour
             {
                 // Enable the inspect text when the ray hits the object
                 inspectText.gameObject.SetActive(true);
-                
 
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     InspectedObj = hit.transform.gameObject;
                     originalPos = hit.transform.position;
+                    originalRot = hit.transform.rotation; // Save the original rotation
                     Inspecting = true;
                     StartCoroutine(pickupItem());
                     inspectText.gameObject.SetActive(false);
                     putdownText.gameObject.SetActive(true);
-
-
 
                     uidesc = GameObject.Find(InspectedObj.name + "UI");
                     uidesctransform = uidesc.GetComponent<RectTransform>();
@@ -71,26 +68,18 @@ public class InspectScript : MonoBehaviour
                     if (uidesc != null)
                     {
                         uidesctransform.anchoredPosition = new Vector2(500, 0);
-
-                        
                     }
                     else
                     {
                         // Log a message if the GameObject was not found
                         Debug.Log("No GameObject with the name " + InspectedObj.name + "UI was found.");
                     }
-
-                    
-
                 }
-
-               
             }
             else
             {
                 // Disable the inspect text when the ray doesn't hit any object or when inspecting
                 inspectText.gameObject.SetActive(false);
-
             }
         }
 
@@ -116,7 +105,6 @@ public class InspectScript : MonoBehaviour
             StartCoroutine(droppItem());
             uidesctransform.anchoredPosition = new Vector2(3000, 0);
             putdownText.gameObject.SetActive(false);
-
         }
     }
 
@@ -139,7 +127,8 @@ public class InspectScript : MonoBehaviour
 
     IEnumerator droppItem()
     {
-        InspectedObj.transform.rotation = Quaternion.identity;
+        // Restore the original rotation
+        InspectedObj.transform.rotation = originalRot;
         yield return new WaitForSeconds(0.2f);
         PlayerControllerScript.enabled = true;
 
