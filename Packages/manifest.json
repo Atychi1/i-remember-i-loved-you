@@ -1,6 +1,10 @@
 {
   "dependencies": {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    "com.tripolygon.umodeler-x": "file:com.tripolygon.umodeler-x-0.19.15/com.tripolygon.umodeler-x-0.19.15.tgz",
+>>>>>>> 8665f6f1fbc5a67542c1cc8a4b5b1f642f418566
 =======
     "com.tripolygon.umodeler-x": "file:com.tripolygon.umodeler-x-0.19.15/com.tripolygon.umodeler-x-0.19.15.tgz",
 >>>>>>> 8665f6f1fbc5a67542c1cc8a4b5b1f642f418566

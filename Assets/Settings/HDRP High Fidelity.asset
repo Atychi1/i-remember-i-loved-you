@@ -15,8 +15,13 @@ MonoBehaviour:
   m_RenderPipelineSettings:
     supportShadowMask: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     supportSSR: 0
     supportSSRTransparent: 0
+=======
+    supportSSR: 1
+    supportSSRTransparent: 1
+>>>>>>> 8665f6f1fbc5a67542c1cc8a4b5b1f642f418566
 =======
     supportSSR: 1
     supportSSRTransparent: 1
@@ -30,7 +35,11 @@ MonoBehaviour:
         m_Id: With3Levels
     supportVolumetrics: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
     supportVolumetricClouds: 0
+=======
+    supportVolumetricClouds: 1
+>>>>>>> 8665f6f1fbc5a67542c1cc8a4b5b1f642f418566
 =======
     supportVolumetricClouds: 1
 >>>>>>> 8665f6f1fbc5a67542c1cc8a4b5b1f642f418566
@@ -61,6 +70,10 @@ MonoBehaviour:
     msaaSampleCount: 1
     supportMotionVectors: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    supportDataDrivenLensFlare: 1
+>>>>>>> 8665f6f1fbc5a67542c1cc8a4b5b1f642f418566
 =======
     supportDataDrivenLensFlare: 1
 >>>>>>> 8665f6f1fbc5a67542c1cc8a4b5b1f642f418566
@@ -76,7 +89,11 @@ MonoBehaviour:
     supportedRayTracingMode: 3
     lightLoopSettings:
 <<<<<<< HEAD
+<<<<<<< HEAD
       cookieAtlasSize: 512
+=======
+      cookieAtlasSize: 2048
+>>>>>>> 8665f6f1fbc5a67542c1cc8a4b5b1f642f418566
 =======
       cookieAtlasSize: 2048
 >>>>>>> 8665f6f1fbc5a67542c1cc8a4b5b1f642f418566
@@ -311,6 +328,11 @@ MonoBehaviour:
   virtualTexturingSettings:
     streamingCpuCacheSizeInMegaBytes: 256
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    streamingMipPreloadTexturesPerFrame: 0
+    streamingPreloadMipCount: 1
+>>>>>>> 8665f6f1fbc5a67542c1cc8a4b5b1f642f418566
 =======
     streamingMipPreloadTexturesPerFrame: 0
     streamingPreloadMipCount: 1

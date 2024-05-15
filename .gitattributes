@@ -1,6 +1,11 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+*.unity filter=lfs diff=lfs merge=lfs -text
+*.fbx filter=lfs diff=lfs merge=lfs -text
+>>>>>>> 8665f6f1fbc5a67542c1cc8a4b5b1f642f418566
 =======
 *.unity filter=lfs diff=lfs merge=lfs -text
 *.fbx filter=lfs diff=lfs merge=lfs -text
