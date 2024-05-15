@@ -1,14 +1,5 @@
 {
   "dependencies": {
-<<<<<<< HEAD
-=======
-    "com.tripolygon.umodeler-x": {
-      "version": "file:com.tripolygon.umodeler-x-0.19.15/com.tripolygon.umodeler-x-0.19.15.tgz",
-      "depth": 0,
-      "source": "local-tarball",
-      "dependencies": {}
-    },
->>>>>>> 8665f6f1fbc5a67542c1cc8a4b5b1f642f418566
     "com.unity.burst": {
       "version": "1.8.7",
       "depth": 1,

@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+<<<<<<< HEAD
   tags: []
+=======
+  tags:
+  - Object
+>>>>>>> parent of d54c51a (erm fix problem pls)
   layers:
   - Default
   - TransparentFX
