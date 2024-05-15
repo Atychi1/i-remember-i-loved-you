@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Object
+<<<<<<< HEAD
+=======
+  - ObjectWDesc
+>>>>>>> 8665f6f1fbc5a67542c1cc8a4b5b1f642f418566
   layers:
   - Default
   - TransparentFX
